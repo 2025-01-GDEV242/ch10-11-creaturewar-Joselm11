@@ -73,4 +73,7 @@ public abstract class Creature
         hp-= damage;
     }
     
+    @Override
+    public abstract String toString();
+    
 }

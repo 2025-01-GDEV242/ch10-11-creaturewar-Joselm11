@@ -26,4 +26,9 @@ public class Balrog extends Demon
     {
         return super.attack() + super.attack();
     }
+    
+    @Override
+    public String toString() {
+        return "Balrog";
+    }
 }

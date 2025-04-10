@@ -19,4 +19,9 @@ public class CyberDemon extends Demon
             Randomizer.nextInt(MAX_CYBER_HP - MIN_CYBER_HP + 1) + MIN_CYBER_HP
         );
     }
+    
+    @Override
+    public String toString() {
+        return "CyberDemon";
+    }
 }

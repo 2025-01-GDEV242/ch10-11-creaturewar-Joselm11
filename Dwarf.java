@@ -7,10 +7,10 @@
  */
 public class Dwarf extends Creature
 {
-    private static final int MAX_DWARF_STR = 45;
-    private static final int MIN_DWARF_STR = 25;
-    private static final int MAX_DWARF_HP = 100;
-    private static final int MIN_DWARF_HP = 60;
+    private static final int MAX_DWARF_STR = 30;
+    private static final int MIN_DWARF_STR = 15;
+    private static final int MAX_DWARF_HP = 60;
+    private static final int MIN_DWARF_HP = 30;
 
     /**
      * Constructor for objects of class Dwarf
@@ -31,9 +31,15 @@ public class Dwarf extends Creature
     {
         // 20% chance to take half damage
         int chance = Randomizer.nextInt(100); // returns 1 to 100
-        if (chance <= 20) {
+        if (chance <= 15) {
             damage = damage / 2;
+            System.out.println("  Dwarf takes half damage!");
         }
         super.takeDamage(damage);
+    }
+    
+    @Override
+    public String toString() {
+        return "Dwarf";
     }
 }

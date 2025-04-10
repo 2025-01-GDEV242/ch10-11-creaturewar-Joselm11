@@ -26,7 +26,13 @@ public class Elf extends Creature
         // 10% chance to do double damage
         if (Randomizer.nextInt(10) == 1) {
             damage *= 2;
+            System.out.println("  Elf does double damage");
         }
         return damage;
+    }
+    
+    @Override
+    public String toString() {
+        return "Elf";
     }
 }

@@ -17,7 +17,13 @@ public class Demon extends Creature {
         int damage = super.attack();
         if (Randomizer.nextInt(100) <= 5) { // 5% chance
             damage += 50;
+            System.out.println("  " + this.toString() + " 50 magic damage");
         }
         return damage;
+    }
+    
+    @Override
+    public String toString() {
+        return "Demon";
     }
 }
